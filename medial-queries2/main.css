@@ -1,3 +1,141 @@
 body {
-  background: papayawhip;
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
 }
+
+*{
+  border: 0.1em;
+  border-color: black;  
+  border-style: solid;
+}
+z
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: auto;
+}                  
+
+.a {
+  min-height: 15vh;
+  display: block;
+  flex-grow: 1;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.G {
+  min-height: 75vh;
+  display: block;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+
+.G > .H {
+  min-height: 40vh;
+  display: block;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.G > .f {
+  min-height: 15vh;
+  display: block;
+  flex-grow: 1;
+  flex-direction: column;
+  margin: 1em;
+}
+
+
+.H > .b {
+  min-height: 20vh;
+  display: block;
+  flex-grow: 1;
+  margin: 1em;
+}
+
+.I {
+  min-height: 25vh;
+  display: block;
+  flex-direction: row;
+  flex-grow: 3;
+}
+
+
+.I > div {
+  display: inline-block;
+  min-width: 25vw;
+  min-height: 20vh;
+  flex-direction: row;
+  justify-content: auto;
+  margin: 1em;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+  .a {
+    height: 20vh;
+    display: block;
+    flex-grow: 1;
+    flex-direction: column;
+    margin: 1em;
+    width: 100%;
+  }
+
+  .G {
+    height: 80vh;
+    display: block;
+    flex-direction: column;
+    margin: 1em;
+    flex-grow: 1;
+    width: 100%;
+  }
+  .G > .H {
+    display: inline-block;
+    height: 80vh;
+    flex-direction: row;
+    width: 60%;
+  }
+  .G > .f {
+      display: inline-block;
+      flex-direction: column;
+      height: 80vh;
+      width: 30%;
+      position: absolute;
+
+
+  }
+  .H > .b {
+    height: 30vh;
+    display: block;
+    width: 70%;
+    flex-grow: 1;
+    flex-direction: column;
+    margin: 1em;
+
+  }
+  .I {
+    height: 40vh;
+    display: block;
+    width: 70%;
+    flex-grow: 1;
+    flex-direction: row;
+    margin: 1em;
+
+  }
+  .I > div {
+    display: inline-block;
+    width: 10wv;
+    flex-direction: row;
+    justify-content: auto;
+    margin: 1em;
+  }
+}                                  
+
